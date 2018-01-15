@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans Japanese", Hiragino Sans, "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "メイリオ", Meiryo, sans-serif;
+  background: #fff;
+  color: #200706;
+  font-weight: 200;
+  text-align: center;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Setting */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "メイリオ", Meiryo, sans-serif;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Base */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Title */
+.section__title p {
+  color: #200706;
+  font-size: 1.5rem;
+  line-height: 30px;
+  padding: 0 180px;
+}
+
+/* Contact */
+.contact {
+  padding: 200px 20px;
+  background-image: url("../img/contact/contact_bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.contact .contact__box {
+  overflow: hidden;
+  margin-top: 100px;
+}
+.contact .contact__box table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+.contact .contact__box th {
+  width: 30%;
+  border: 1px solid #dcdcdc;
+  background: #FDFCE9;
+  color: #200706;
+  font-size: 1.3rem;
+  padding: 15px 10px;
+}
+.contact .contact__box td {
+  width: 70%;
+  border: 1px solid #dcdcdc;
+  background: #FDFCE9;
+  color: #200706;
+  font-size: 1.3rem;
+  padding: 15px 10px;
+  word-wrap: break-word;
+}
+.contact .contact__box input[type=button] {
+  -webkit-appearance: none;
+  font-size: 1.3rem;
+  width: 200px;
+  margin: 50px 20px 0 0;
+  padding: 15px;
+  outline: none;
+  border: 1px solid #dcdcdc;
+  border-radius: 0;
+  background: #fff;
+  cursor: pointer;
+}
+.contact .contact__box button[type=submit] {
+  font-size: 1.3rem;
+  width: 200px;
+  margin: 50px auto 0;
+  padding: 15px;
+  outline: none;
+  border: 1px solid #dcdcdc;
+  border-radius: 0;
+  background: #FDFCE9;
+  cursor: pointer;
+}
+.contact .contact__box button {
+  font-size: 1.3rem;
+  width: 200px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid #dcdcdc;
+  border-radius: 0;
+  background: #FDFCE9;
+  cursor: pointer;
+}
+
+/* iPhoneSE */
+/* 320px以下の場合 */
+@media screen and (max-width: 320px) {
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* Title */
+  .section__title p {
+    font-size: 1.4rem;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 120px 20px;
+  }
+  .contact .contact__box {
+    margin-top: 80px;
+  }
+  .contact .contact__box table {
+    width: 100%;
+  }
+  .contact .contact__box th {
+    width: 40%;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+  }
+  .contact .contact__box td {
+    width: 60%;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+  }
+  .contact .contact__box input[type=button] {
+    margin-right: 0;
+    padding: 10px;
+    width: 150px;
+  }
+  .contact .contact__box button[type=submit] {
+    margin: 20px auto 0;
+    padding: 10px;
+    width: 150px;
+  }
+  .contact .contact__box button {
+    padding: 10px;
+    width: 150px;
+  }
+}
+/* iPhone8, iPhone8+ */
+/* 321px以上、767px以下のの場合 */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* Title */
+  .section__title p {
+    font-size: 1.4rem;
+    line-height: 24px;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 120px 20px;
+  }
+  .contact .contact__box {
+    margin-top: 80px;
+  }
+  .contact .contact__box table {
+    width: 100%;
+  }
+  .contact .contact__box input[type=button] {
+    margin-right: 15px;
+    padding: 10px;
+    width: 150px;
+  }
+  .contact .contact__box button[type=submit] {
+    padding: 10px;
+    width: 150px;
+  }
+  .contact .contact__box button {
+    padding: 10px;
+    width: 150px;
+  }
+}
+/* iPhoneSE width*/
+/* 321px以上、567px以下のの場合 */
+@media screen and (min-width: 321px) and (max-width: 567px) {
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  .section__title p {
+    padding: 0;
+  }
+
+  /* Contact */
+  .contact .contact__box th {
+    width: 40%;
+  }
+  .contact .contact__box td {
+    width: 60%;
+  }
+}
+/* iPhone8, iPhone8+ width */
+/* 568px以上、767px以下のの場合 */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* Section Title */
+  .section__title p {
+    padding: 0 50px;
+  }
+
+  .contact {
+    height: 100%;
+  }
+  .contact .contact__box table {
+    width: 80%;
+  }
+}
+/* iPad */
+/* 768px以上、1023px以下のの場合 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* Section Title */
+  .section__title p {
+    padding: 0 95px;
+  }
+}

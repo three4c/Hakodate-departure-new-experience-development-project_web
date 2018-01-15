@@ -1,0 +1,292 @@
+/* Reset CSS */
+@import 'compass/reset';
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Noto Sans Japanese", Hiragino Sans, "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "メイリオ", Meiryo, sans-serif;
+  background: #fff;
+  color: #200706;
+  font-weight: 200;
+  text-align: center;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Setting */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "メイリオ", Meiryo, sans-serif;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Base */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Title */
+.section__title {
+  p {
+    color: #200706;
+    font-size: 1.5rem;
+    line-height: 30px;
+    padding: 0 180px;
+  }
+}
+
+/* Contact */
+.contact {
+  padding: 200px 20px;
+  background-image: url("../img/contact/contact_bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  .contact__box {
+    overflow: hidden;
+    margin-top: 100px;
+    table {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.8;
+    }
+    th {
+      width: 30%;
+      border: 1px solid #dcdcdc;
+      background: #FDFCE9;
+      color: #200706;
+      font-size: 1.3rem;
+      padding: 15px 10px;
+    }
+    td {
+      width: 70%;
+      border: 1px solid #dcdcdc;
+      background: #FDFCE9;
+      color: #200706;
+      font-size: 1.3rem;
+      padding: 15px 10px;
+      word-wrap: break-word;
+    }
+    input[type=button] {
+      -webkit-appearance: none;
+      font-size: 1.3rem;
+      width: 200px;
+      margin: 50px 20px 0 0;
+      padding: 15px;
+      outline: none;
+      border: 1px solid #dcdcdc;
+      border-radius: 0;
+      background: #fff;
+      cursor: pointer;
+    }
+    button[type=submit] {
+      font-size: 1.3rem;
+      width: 200px;
+      margin: 50px auto 0;
+      padding: 15px;
+      outline: none;
+      border: 1px solid #dcdcdc;
+      border-radius: 0;
+      background: #FDFCE9;
+      cursor: pointer;
+    }
+    button {
+      font-size: 1.3rem;
+      width: 200px;
+      padding: 15px;
+      outline: none;
+      border: 1px solid #dcdcdc;
+      border-radius: 0;
+      background: #FDFCE9;
+      cursor: pointer;
+    }
+  }
+}
+
+/* iPhoneSE */
+/* 320px以下の場合 */
+@media screen and (max-width: 320px) {
+
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* Title */
+  .section__title {
+    p {
+      font-size: 1.4rem;
+      line-height: 24px;
+      padding: 0;
+    }
+  }
+
+  /* Contact */
+  .contact {
+    padding: 120px 20px;
+    .contact__box {
+      margin-top: 80px;
+      table {
+        width: 100%;
+      }
+      th {
+        width: 40%;
+        padding: 10px 5px;
+        font-size: 1.2rem;
+      }
+      td {
+        width: 60%;
+        padding: 10px 5px;
+        font-size: 1.2rem;
+      }
+      input[type=button] {
+        margin-right: 0;
+        padding: 10px;
+        width: 150px;
+      }
+      button[type=submit] {
+        margin: 20px auto 0;
+        padding: 10px;
+        width: 150px;
+      }
+      button {
+        padding: 10px;
+        width: 150px;
+      }
+    }
+  }
+
+}
+
+/* iPhone8, iPhone8+ */
+/* 321px以上、767px以下のの場合 */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* Title */
+  .section__title {
+    p {
+      font-size: 1.4rem;
+      line-height: 24px;
+    }
+  }
+
+  /* Contact */
+  .contact {
+    padding: 120px 20px;
+    .contact__box {
+      margin-top: 80px;
+      table {
+        width: 100%;
+      }
+      input[type=button] {
+        margin-right: 15px;
+        padding: 10px;
+        width: 150px;
+      }
+      button[type=submit] {
+        padding: 10px;
+        width: 150px;
+      }
+      button {
+        padding: 10px;
+        width: 150px;
+      }
+    }
+  }
+
+}
+
+/* iPhoneSE width*/
+/* 321px以上、567px以下のの場合 */
+@media screen and (min-width: 321px) and (max-width: 567px) {
+
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  .section__title {
+    p {
+      padding: 0;
+    }
+  }
+
+  /* Contact */
+  .contact {
+    .contact__box {
+      th {
+        width: 40%;
+      }
+      td {
+        width: 60%;
+      }
+    }
+  }
+
+}
+
+/* iPhone8, iPhone8+ width */
+/* 568px以上、767px以下のの場合 */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* Section Title */
+  .section__title {
+    p {
+      padding: 0 50px;
+    }
+  }
+
+  .contact {
+    height: 100%;
+    .contact__box {
+      table {
+        width: 80%;
+      }
+    }
+  }
+
+}
+
+/* iPad */
+/* 768px以上、1023px以下のの場合 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /* Base */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* Section Title */
+  .section__title {
+    p {
+      padding: 0 95px;
+    }
+  }
+
+}
