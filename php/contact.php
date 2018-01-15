@@ -13,7 +13,7 @@ if (isset($_POST["submit"])) {
   mb_internal_encoding( "utf-8" );
 
   $subject = "【函館発新体験開発プロジェクト2017】お問い合わせメール";
-  $from = "b1015056@fun.ac.jp";
+  $from = "email@example.com";
 
   $body = <<< EOM
 
